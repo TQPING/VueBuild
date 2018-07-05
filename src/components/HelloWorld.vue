@@ -2,6 +2,11 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <a href="#/home">Go Home</a>
+    <a href="#/Toggle">Go Toggle</a>
+    <h3>
+    	<input type="text" v-model="datatxt" />
+    	<p>{{datatxt}}</p>
+    </h3>
   </div>
 </template>
 
@@ -10,7 +15,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      datatxt:'lulu'
     }
   }
 }
